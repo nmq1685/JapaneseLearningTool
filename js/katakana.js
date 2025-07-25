@@ -5,7 +5,7 @@
 
 // Katakana data
 const katakanaData = [
-    { katakana: 'ア', romaji: 'a' },
+    { katakana: 'ア', romaji: 'a' }
     { katakana: 'イ', romaji: 'i' },
     { katakana: 'ウ', romaji: 'u' },
     { katakana: 'エ', romaji: 'e' },

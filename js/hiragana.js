@@ -202,7 +202,7 @@ class TestManager {
 
     generateTestQuestions() {
         const shuffled = this.shuffleArray([...hiraganaData]);
-        return shuffled.slice(0, 20).map(item => {
+        return shuffled.map(item => {
             const incorrectOptions = this.shuffleArray(
                 hiraganaData.filter(opt => opt.romaji !== item.romaji).map(opt => opt.romaji)
             ).slice(0, 3);

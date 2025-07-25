@@ -78,6 +78,7 @@ class FlashcardManager {
 
     bindEvents() {
         this.flipBtn.addEventListener('click', () => this.hiraganaCard.classList.toggle('flipped'));
+        this.hiraganaCard.addEventListener('click', () => this.hiraganaCard.classList.toggle('flipped'));
         this.prevBtn.addEventListener('click', () => this.previousCard());
         this.nextBtn.addEventListener('click', () => this.nextCard());
         this.shuffleBtn.addEventListener('click', () => this.shuffleCards());

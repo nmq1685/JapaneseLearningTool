@@ -104,9 +104,8 @@ const PageInit = {
      * Load header and footer components
      */
     loadHeaderFooter: function() {
-        // Determine the correct path based on current page location
-        const isInSubfolder = window.location.pathname.includes('/pages/');
-        const basePath = isInSubfolder ? '../' : '';
+        // Use absolute paths for GitHub Pages compatibility
+        const basePath = '/JapaneseLearningTool/';
         
         Utils.loadHTML(`${basePath}assets/header.html`, 'header-placeholder');
         Utils.loadHTML(`${basePath}assets/footer.html`, 'footer-placeholder');

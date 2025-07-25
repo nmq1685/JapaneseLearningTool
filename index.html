@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japanese Learning Tools</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="bg-gradient-to-br from-gray-900 to-gray-800 min-h-screen transition-colors duration-300 antialiased">
+    <!-- Include Header -->
+    <div id="header-placeholder"></div>
+    
+    <div class="container mx-auto px-4 py-8 max-w-6xl">
+        <!-- Hero Section -->
+        <section class="text-center mb-16 relative animate-fade-in">
+            <div class="mb-8">
+                <h1 class="text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-500 mb-4 animate-pulse">Master Japanese Now</h1>
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto">Master Hiragana and Katakana with interactive flashcards and tests</p>
+                <p class="text-lg text-gray-400 mt-2">Developed and maintained by NMQ and Hứa Mộc.</p>
+            </div>
+            
+            <!-- Floating Japanese characters -->
+            <div class="absolute top-0 left-0 w-full h-full pointer-events-none overflow-hidden">
+                <div class="absolute top-10 left-10 text-6xl text-indigo-800 animate-float" style="animation-delay: 0s;">あ</div>
+                <div class="absolute top-20 right-20 text-5xl text-purple-800 animate-float" style="animation-delay: 2s;">ア</div>
+                <div class="absolute bottom-10 left-20 text-4xl text-blue-800 animate-float" style="animation-delay: 4s;">か</div>
+                <div class="absolute bottom-20 right-10 text-5xl text-pink-800 animate-float" style="animation-delay: 1s;">カ</div>
+            </div>
+        </section>
+
+        <!-- Main Learning Cards -->
+        <main class="grid md:grid-cols-2 gap-8 mb-16">
+            <!-- Hiragana Card -->
+            <div class="card bg-gray-800 rounded-2xl shadow-xl p-8 border border-gray-700 animate-fade-in" style="animation-delay: 0.2s;">
+                <div class="text-center mb-6">
+                    <div class="w-24 h-24 mx-auto mb-4 gradient-bg rounded-full flex items-center justify-center">
+                        <span class="text-4xl font-bold text-white">あ</span>
+                    </div>
+                    <h2 class="text-3xl font-bold text-gray-200 mb-2">Hiragana Master</h2>
+                    <p class="text-gray-400 mb-6">Learn the fundamental Japanese syllabary with interactive flashcards and comprehensive tests.</p>
+                </div>
+                
+                <div class="space-y-4 mb-6">
+                    <div class="flex items-center text-gray-400">
+                        <i class="fas fa-check-circle text-green-500 mr-3"></i>
+                        <span>46 Hiragana characters</span>
+                    </div>
+                    <div class="flex items-center text-gray-400">
+                        <i class="fas fa-check-circle text-green-500 mr-3"></i>
+                        <span>Interactive flashcards</span>
+                    </div>
+                    <div class="flex items-center text-gray-400">
+                        <i class="fas fa-check-circle text-green-500 mr-3"></i>
+                        <span>Practice tests</span>
+                    </div>
+                    <div class="flex items-center text-gray-400">
+                        <i class="fas fa-check-circle text-green-500 mr-3"></i>
+                        <span>Responsive design</span>
+                    </div>
+                </div>
+                
+                <a href="pages/hiragana.html" class="block w-full text-center bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-3 rounded-lg font-semibold hover:from-indigo-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105">
+                    Start Learning Hiragana
+                </a>
+            </div>
+
+            <!-- Katakana Card -->
+            <div class="card bg-gray-800 rounded-2xl shadow-xl p-8 border border-gray-700 animate-fade-in" style="animation-delay: 0.4s;">
+                <div class="text-center mb-6">
+                    <div class="w-24 h-24 mx-auto mb-4 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full flex items-center justify-center">
+                        <span class="text-4xl font-bold text-white">ア</span>
+                    </div>
+                    <h2 class="text-3xl font-bold text-gray-200 mb-2">Katakana Master</h2>
+                    <p class="text-gray-400 mb-6">Master the Japanese syllabary used for foreign words with engaging learning tools.</p>
+                </div>
+                
+                <div class="space-y-4 mb-6">
+                    <div class="flex items-center text-gray-400">
+                        <i class="fas fa-check-circle text-green-500 mr-3"></i>
+                        <span>46 Katakana characters</span>
+                    </div>
+                    <div class="flex items-center text-gray-400">
+                        <i class="fas fa-check-circle text-green-500 mr-3"></i>
+                        <span>Interactive flashcards</span>
+                    </div>
+                    <div class="flex items-center text-gray-400">
+                        <i class="fas fa-check-circle text-green-500 mr-3"></i>
+                        <span>Practice tests</span>
+                    </div>
+                    <div class="flex items-center text-gray-400">
+                        <i class="fas fa-check-circle text-green-500 mr-3"></i>
+                        <span>Responsive design</span>
+                    </div>
+                </div>
+                
+                <a href="pages/katakana.html" class="block w-full text-center bg-gradient-to-r from-purple-600 to-pink-600 text-white py-3 rounded-lg font-semibold hover:from-purple-700 hover:to-pink-700 transition-all duration-300 transform hover:scale-105">
+                    Start Learning Katakana
+                </a>
+            </div>
+        </main>
+
+        <!-- Features Section -->
+        <section class="text-center mb-16 animate-fade-in" style="animation-delay: 0.6s;">
+            <h2 class="text-4xl font-bold text-gray-200 mb-8">Why Choose Our Learning Tools?</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-800 rounded-xl p-6 shadow-lg border border-gray-700">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-blue-900 rounded-full flex items-center justify-center">
+                        <i class="fas fa-brain text-2xl text-blue-400"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-200 mb-2">Interactive Learning</h3>
+                    <p class="text-gray-400">Engage with dynamic flashcards and interactive tests designed to enhance memory retention.</p>
+                </div>
+                
+                <div class="bg-gray-800 rounded-xl p-6 shadow-lg border border-gray-700">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-green-900 rounded-full flex items-center justify-center">
+                        <i class="fas fa-chart-line text-2xl text-green-400"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-200 mb-2">Track Progress</h3>
+                    <p class="text-gray-400">Monitor your learning journey with detailed test results and performance feedback.</p>
+                </div>
+                
+                <div class="bg-gray-800 rounded-xl p-6 shadow-lg border border-gray-700">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-purple-900 rounded-full flex items-center justify-center">
+                        <i class="fas fa-mobile-alt text-2xl text-purple-400"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-200 mb-2">Responsive Design</h3>
+                    <p class="text-gray-400">Learn anywhere, anytime with our mobile-friendly and responsive design.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+    </div>
+    
+    <!-- Include Footer -->
+    <div id="footer-placeholder"></div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

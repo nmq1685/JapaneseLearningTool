@@ -1,0 +1,154 @@
+/* Main styles for Japanese Learning Tool */
+
+/* Card animations and effects */
+.card {
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.card:hover {
+    transform: translateY(-12px) scale(1.03);
+    box-shadow: 0 25px 30px -5px rgba(0, 0, 0, 0.15), 0 12px 12px -5px rgba(0, 0, 0, 0.08);
+    filter: brightness(1.05);
+}
+
+/* Gradient backgrounds */
+.gradient-bg {
+    background: linear-gradient(135deg, #4f46e5 0%, #a855f7 100%);
+}
+
+/* Float animation */
+.animate-float {
+    animation: float 5s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { 
+        transform: translateY(0px) rotate(0deg); 
+    }
+    50% { 
+        transform: translateY(-25px) rotate(2deg); 
+    }
+}
+
+/* Fade in animation */
+.animate-fade-in {
+    animation: fadeIn 1.2s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+@keyframes fadeIn {
+    from { 
+        opacity: 0; 
+        transform: translateY(40px) scale(0.95); 
+    }
+    to { 
+        opacity: 1; 
+        transform: translateY(0) scale(1); 
+    }
+}
+
+/* Legacy light theme overrides (for compatibility) */
+.bg-white {
+    background-color: #f8fafc;
+}
+
+.text-gray-800 {
+    color: #1e293b;
+}
+
+.text-gray-600 {
+    color: #475569;
+}
+
+.border-gray-200 {
+    border-color: #e2e8f0;
+}
+
+body {
+    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+}
+
+/* Flashcard specific styles */
+.flashcard {
+    perspective: 1000px;
+    width: 100%;
+    height: 300px;
+}
+
+.flashcard-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.flashcard.flipped .flashcard-inner {
+    transform: rotateY(180deg);
+}
+
+.flashcard-front, .flashcard-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.flashcard-back {
+    transform: rotateY(180deg);
+}
+
+/* Progress bar animations */
+.progress-bar {
+    transition: width 0.3s ease-in-out;
+}
+
+/* Button hover effects */
+.btn-primary {
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Modal animations */
+.modal {
+    transition: opacity 0.3s ease;
+}
+
+.modal.show {
+    opacity: 1;
+}
+
+.modal.hide {
+    opacity: 0;
+}
+
+/* Responsive design helpers */
+@media (max-width: 768px) {
+    .flashcard {
+        height: 250px;
+    }
+    
+    .flashcard-front, .flashcard-back {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .flashcard {
+        height: 200px;
+    }
+    
+    .flashcard-front, .flashcard-back {
+        font-size: 2rem;
+    }
+}

@@ -5,7 +5,7 @@
 
 // Hiragana data
 const hiraganaData = [
-    { hiragana: 'あ', romaji: 'a' }
+    { hiragana: 'あ', romaji: 'a' },
     { hiragana: 'い', romaji: 'i' },
     { hiragana: 'う', romaji: 'u' },
     { hiragana: 'え', romaji: 'e' },
